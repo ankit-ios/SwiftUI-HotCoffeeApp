@@ -9,8 +9,13 @@ import SwiftUI
 
 struct AddOrderView: View {
     
-    @State var addOrderVM = AddOrderViewModel()
+    @State var addOrderVM: AddOrderViewModel
     @Binding var isPresented: Bool
+    
+    init(isPresented: Binding<Bool>) {
+        self.addOrderVM = AddOrderViewModel()
+        self._isPresented = isPresented //use _ when initializing the Binding variable
+    }
     
     var body: some View {
         NavigationView {
