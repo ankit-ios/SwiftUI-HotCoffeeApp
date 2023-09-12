@@ -13,6 +13,11 @@
 		ADFF065F2AB0738A006D1282 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADFF065E2AB0738A006D1282 /* Preview Assets.xcassets */; };
 		ADFF06612AB0738A006D1282 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFF06602AB0738A006D1282 /* Persistence.swift */; };
 		ADFF06642AB0738A006D1282 /* HotCoffeeApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ADFF06622AB0738A006D1282 /* HotCoffeeApp.xcdatamodeld */; };
+		ADFF066E2AB075CA006D1282 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFF066D2AB075CA006D1282 /* CoreDataManager.swift */; };
+		ADFF06702AB07996006D1282 /* AddOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFF066F2AB07996006D1282 /* AddOrderViewModel.swift */; };
+		ADFF06742AB094BE006D1282 /* AddOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFF06732AB094BE006D1282 /* AddOrderView.swift */; };
+		ADFF06762AB0974A006D1282 /* OrderListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFF06752AB0974A006D1282 /* OrderListViewModel.swift */; };
+		ADFF06782AB0977E006D1282 /* OrderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFF06772AB0977E006D1282 /* OrderListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +28,11 @@
 		ADFF065E2AB0738A006D1282 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ADFF06602AB0738A006D1282 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		ADFF06632AB0738A006D1282 /* HotCoffeeApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HotCoffeeApp.xcdatamodel; sourceTree = "<group>"; };
+		ADFF066D2AB075CA006D1282 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		ADFF066F2AB07996006D1282 /* AddOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrderViewModel.swift; sourceTree = "<group>"; };
+		ADFF06732AB094BE006D1282 /* AddOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrderView.swift; sourceTree = "<group>"; };
+		ADFF06752AB0974A006D1282 /* OrderListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListViewModel.swift; sourceTree = "<group>"; };
+		ADFF06772AB0977E006D1282 /* OrderListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +65,10 @@
 		ADFF06562AB07388006D1282 /* HotCoffeeApp */ = {
 			isa = PBXGroup;
 			children = (
+				ADFF066C2AB075AA006D1282 /* Managers */,
+				ADFF066B2AB0756F006D1282 /* Views */,
+				ADFF066A2AB07564006D1282 /* View models */,
 				ADFF06572AB07388006D1282 /* HotCoffeeAppApp.swift */,
-				ADFF06592AB07388006D1282 /* ContentView.swift */,
 				ADFF065B2AB0738A006D1282 /* Assets.xcassets */,
 				ADFF06602AB0738A006D1282 /* Persistence.swift */,
 				ADFF06622AB0738A006D1282 /* HotCoffeeApp.xcdatamodeld */,
@@ -71,6 +83,33 @@
 				ADFF065E2AB0738A006D1282 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ADFF066A2AB07564006D1282 /* View models */ = {
+			isa = PBXGroup;
+			children = (
+				ADFF06752AB0974A006D1282 /* OrderListViewModel.swift */,
+				ADFF066F2AB07996006D1282 /* AddOrderViewModel.swift */,
+			);
+			path = "View models";
+			sourceTree = "<group>";
+		};
+		ADFF066B2AB0756F006D1282 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ADFF06772AB0977E006D1282 /* OrderListView.swift */,
+				ADFF06732AB094BE006D1282 /* AddOrderView.swift */,
+				ADFF06592AB07388006D1282 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ADFF066C2AB075AA006D1282 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				ADFF066D2AB075CA006D1282 /* CoreDataManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,8 +184,13 @@
 			files = (
 				ADFF06612AB0738A006D1282 /* Persistence.swift in Sources */,
 				ADFF06642AB0738A006D1282 /* HotCoffeeApp.xcdatamodeld in Sources */,
+				ADFF06782AB0977E006D1282 /* OrderListView.swift in Sources */,
 				ADFF065A2AB07388006D1282 /* ContentView.swift in Sources */,
+				ADFF06702AB07996006D1282 /* AddOrderViewModel.swift in Sources */,
+				ADFF066E2AB075CA006D1282 /* CoreDataManager.swift in Sources */,
 				ADFF06582AB07388006D1282 /* HotCoffeeAppApp.swift in Sources */,
+				ADFF06742AB094BE006D1282 /* AddOrderView.swift in Sources */,
+				ADFF06762AB0974A006D1282 /* OrderListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

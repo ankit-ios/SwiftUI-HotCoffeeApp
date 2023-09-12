@@ -10,11 +10,17 @@ import SwiftUI
 @main
 struct HotCoffeeAppApp: App {
     let persistenceController = PersistenceController.shared
-
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            
+            //This is for OrderList app
+            OrderListView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            
+            //Use ContentView for addItem app
+            //            ContentView()
+            //                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }
